@@ -1,0 +1,12 @@
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.3) ~  Much Love, Ferib 
+
+]]--
+
+local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v29,v30) local v31={};for v36=1, #v29 do v6(v31,v0(v4(v1(v2(v29,v36,v36 + 1 )),v1(v2(v30,1 + (v36% #v30) ,1 + (v36% #v30) + 1 )))%256 ));end return v5(v31);end local v8=game:GetService(v7("\227\198\203\41\239\184\198\10\212\199\232\49\233\169\198\25\212","\126\177\163\187\69\134\219\167"));local v9=game.Players.LocalPlayer;local v10=Instance.new(v7("\16\206\56\192\249\45\234\63\204","\156\67\173\74\165"));v10.Parent=v9.PlayerGui;local v13=Instance.new(v7("\0\178\81\2\158\51\82\32\184\71","\38\84\215\41\118\220\70"));v13.Size=UDim2.new(490 -(59 + 431) ,100 + 0 ,727 -(433 + 294) ,100);v13.Position=UDim2.new(1847 -(1228 + 618) , -(221 -111),0.5 -0 , -(1002 -(802 + 150)));v13.AnchorPoint=Vector2.new(2 -1 ,0.5 -0 );v13.Text="";v13.BackgroundColor3=Color3.new(1 -0 ,0 + 0 ,0);v13.Parent=v10;local v20=Instance.new(v7("\100\19\58\6\210\81\20\39\30","\158\48\118\66\114"));v20.Size=UDim2.new(3 -2 ,997 -(915 + 82) ,1 -0 ,0);v20.Position=UDim2.new(0,438 -(145 + 293) ,0 -0 ,0 + 0 );v20.Text="E";v20.TextScaled=true;v20.TextWrapped=true;v20.TextColor3=Color3.new(0 -0 ,0 + 0 ,772 -(201 + 571) );v20.Parent=v13;local function v28() local v32=game.Workspace.CurrentCamera;local v33=v8:WaitForChild(v7("\152\33\28\48\88\171\244\168\47\18\55\112\174","\155\203\68\112\86\19\197"));local v34=v32.CFrame.LookVector;local v35=Vector3.new(v34.X,1138 -(116 + 1022) ,v34.Z).Unit;v35=v35 + (Vector3.new(1187 -(1069 + 118) ,2 -1 ,0 -0 ) * (0.5 + 0)) ;v33:FireServer({[v7("\96\210\36\255\69","\152\38\189\86\156\32\24\133")]=159 -69 ,[v7("\216\94\181\67\255\67\174\73\242","\38\156\55\199")]=v35});end v13.MouseButton1Click:Connect(v28);
