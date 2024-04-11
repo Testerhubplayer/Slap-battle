@@ -12,7 +12,7 @@ for i, v in ipairs(workspace.Arena.island5.Slapples:GetDescendants()) do
         firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v, 1)
     end
 end
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Testerhubplayer/Slap-battle/main/Slapple%20farm"))()
+        loadstring(game:HttpGet(https://raw.githubusercontent.com/Testerhubplayer/Slap-battle/main/Slapple%20farm"))()
     ]])
 end
 game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, serverList[math.random(1, #serverList)])
